@@ -15,7 +15,7 @@ cd backend
 ```bash
 npm install
 ```
-3: Rename the env.txt file to .env and update the values with your own:
+3: Rename the env.txt file to .env and update the MONGO_URI and JWT_SECRET with your own:
 ``` bash
 PORT=5000
 MONGO_URI=your_mongodb_uri_here
@@ -38,4 +38,5 @@ npm install
 3: Run server for frontend
 ``` bash
 npm run dev
+
 ```
