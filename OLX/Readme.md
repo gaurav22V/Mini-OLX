@@ -7,8 +7,8 @@ authenticated users can create, update, or delete products - Only
 authenticated users can create, update, or delete products.
 
 - Product CRUD - Create: Add product with Title, Description, Price, Category, and
-optional Image. => Read: View all products and individual product details. => Update: User can update
-only their own products. => Delete: User can delete only their own products.
+optional Image. - Read: View all products and individual product details. - Update: User can update
+only their own products. - Delete: User can delete only their own products.
 
 - User Profile Page: Show user information and listed products
   
