@@ -1,0 +1,73 @@
+/* Container: centers the card and controls the width */
+.product-detail-container {
+  display: flex;
+  margin-top: 8rem;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: #f8f9fa;
+}
+
+/* Card: shadow, rounded corners, padding */
+.product-detail-card {
+  background: #fff;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+  border-radius: 14px;
+  max-width: 420px;
+  width: 100%;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Image: fixed size, rounded corners, box shadow */
+.product-detail-image {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.09);
+  margin-bottom: 24px;
+}
+
+/* Title: large, bold */
+.product-detail-title {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Description: muted color, readable */
+.product-detail-description {
+  font-size: 1.05rem;
+  color: #545454;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Info: price, category, owner */
+.product-detail-info {
+  font-size: 1rem;
+  margin-bottom: 14px;
+  color: #333;
+}
+
+/* Buttons: styled, spaced */
+.product-detail-btn {
+  width: 120px;
+  padding: 8px 0;
+  margin: 8px 10px 0 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  background: #1976d2;
+  color: #fff;
+  transition: background 0.2s;
+}
+
+.product-detail-btn:hover {
+  background: #003366;
+}

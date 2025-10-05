@@ -1,0 +1,173 @@
+.navBar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 5rem;
+  background: #1c1c1c; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.left a {
+  font-size: 2.5rem;        
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.searchBar {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin: 0 2rem;
+}
+
+.searchBar input {
+  width: 90%;              
+  max-width: 700px;
+  padding: 0.7rem 1.5rem;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  background-color: #333;   
+  color: #fff;
+}
+
+.searchBar input::placeholder {
+  color: #ccc;
+}
+
+.right.desktop-links {
+  display: flex;
+  gap: 6rem;   
+  margin-top: 1rem;
+  margin-right: 4rem;              
+}
+
+.right.desktop-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.4rem;        
+}
+
+.logout-btn {
+  padding: 0.5rem 1.2rem;
+  background-color: #e74c3c; 
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: inline-block;
+  transition: background 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b; 
+}
+
+/* Hamburger button */
+.hamburger {
+  display: none;
+  font-size: 2.2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Side menu */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background: #1c1c1c;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.3);
+  transition: right 0.3s ease;
+  z-index: 1100;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-menu.open {
+  right: 0;
+}
+
+.side-menu .close-btn {
+  align-self: flex-end;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.side-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 1050;
+}
+
+/* Responsivene  */
+@media (max-width: 1024px) {
+  .searchBar input {
+    width: 80%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .right.desktop-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .searchBar {
+    margin: 0 1rem;
+    justify-content: flex-start;
+  }
+
+  .searchBar input {
+    width: 100%;
+    max-width: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .left a {
+    font-size: 1.8rem;
+  }
+}

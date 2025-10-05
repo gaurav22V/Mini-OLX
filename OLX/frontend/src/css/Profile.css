@@ -1,0 +1,77 @@
+/* Profile container and layout */
+.profile-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 6rem 2rem 2rem 2rem; 
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: #f4f6f9;
+  box-sizing: border-box;
+}
+
+.user-info {
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  margin-bottom: 2rem;
+}
+
+.user-info h1 {
+  font-size: 2rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 8px;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.user-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0.4rem 0;
+}
+
+/* Heading for products section */
+.profile-products-section h2 {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.profile-products-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 1200px) {
+  .profile-products-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 900px) {
+  .profile-products-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .profile-products-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.no-products {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 6rem;
+  color: #555;
+}
+
+.loading,
+.error {
+  text-align: center;
+  margin-top: 6rem;
+  color: #555;
+  font-size: 1.75rem;
+}
