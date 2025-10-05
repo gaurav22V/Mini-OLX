@@ -18,8 +18,6 @@ only their own products. - Delete: User can delete only their own products.
 
 ## Steps to run the project locally:
 
----
-
 ## Backend Setup
 
 1. Open terminal and navigate to the backend folder:
@@ -56,5 +54,6 @@ npm install
 npm run dev
 
 ```
+
 
 
