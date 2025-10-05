@@ -14,7 +14,9 @@ only their own products. - Delete: User can delete only their own products.
   
 - Search : Search by title
 
-Steps to run the project locally:
+---
+
+## Steps to run the project locally:
 
 ---
 
@@ -54,4 +56,5 @@ npm install
 npm run dev
 
 ```
+
 
